@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say python definition when asked
+  steps:
+  - intent: python
+  - action: utter_python
+
+- rule: Say deep learning definition when asked
+  steps:
+  - intent: deep_learning
+  - action: utter_deep_learning
+
+- rule: Say machine learning definition when asked
+  steps:
+  - intent: machine_learning
+  - action: utter_machine_learning
+
+- rule: Say out of scope
+  steps:
+  - intent: outofscope
+  - action: utter_outofscope

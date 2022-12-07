@@ -1,0 +1,50 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - python
+  - deep_learning
+  - machine_learning
+  - outofscope
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_python:
+  - text: "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics developed by Guido van Rossum in 1991."
+
+  utter_deep_learning:
+  - text: "Deep learning is part of a broader family of machine learning methods based on artificial neural networks with representation learning."
+
+  utter_machine_learning:
+  - text: "Machine learning is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks."
+
+  utter_outofscope:
+  - text: "Sorry I can't understand."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
